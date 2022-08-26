@@ -16,4 +16,4 @@ jobs:
         TARGET_BRANCH: main
         BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: docs/.vitepress/dist
-#         CNAME: https://www.xxx.com
+        CNAME: https://vitdocjs.github.io/
