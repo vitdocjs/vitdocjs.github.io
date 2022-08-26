@@ -10,29 +10,9 @@ const deployURL = process.env.DEPLOY_PRIME_URL || ''
 // @ts-ignore
 const commitRef = process.env.COMMIT_REF?.slice(0, 8) || 'dev'
 
-const deployType = (() => {
-  switch (deployURL) {
-    case 'https://main--vite-docs-main.netlify.app':
-      return 'main'
-    case '':
-      return 'local'
-    default:
-      return 'release'
-  }
-})()
-const additionalTitle = ((): string => {
-  switch (deployType) {
-    case 'main':
-      return ' (main branch)'
-    case 'local':
-      return ' (local)'
-    case 'release':
-      return ''
-  }
-})()
 
 export default defineConfig({
-  title: `VitDoc${additionalTitle}`,
+  title: `VitDoc`,
   description: 'Next Generation Frontend Tooling',
 
   head: [
