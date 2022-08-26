@@ -1,6 +1,10 @@
 name: Build and Deploy
 
-on: [push]
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,4 +20,12 @@ jobs:
         TARGET_BRANCH: main
         BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: docs/.vitepress/dist
-        CNAME: https://vitdocjs.github.io/
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        # Upload entire repository
+        path: '.'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
