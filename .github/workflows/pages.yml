@@ -13,7 +13,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.BUILD_DEPLOY }}
         TARGET_REPO: vitdocjs/vitdocjs.github.io
-        TARGET_BRANCH: _dist
+        TARGET_BRANCH: main
         BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: docs/.vitepress/dist
 #         CNAME: https://www.xxx.com
