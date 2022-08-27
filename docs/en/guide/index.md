@@ -10,7 +10,7 @@ Vite 需要 [Node.js](https://nodejs.org/en/) 版本 14.18+，16+。然而，有
 
 你可以直接使用 [vitdoc-template](https://github.com/vitdocjs/vitdoc-template) 进行仓库初始化，访问 https://github.com/vitdocjs/vitdoc-template 了解更多。
 
-![img.png](../public/repo-template.png)
+![img.png](/public/repo-template.png)
 
 该模板中已经为你提供一些组件和文档用法，完成初始化后即可按照以下步骤进行开发：
 

@@ -2,40 +2,42 @@
 layout: home
 
 title: VitDoc
-titleTemplate: A new way to write Component Usage.
+titleTemplate: 基于Vite的组件开发生产力工具
 
 hero:
   name: VitDoc
-  text: A new way to write Component Usage.
-  tagline: Powered by Vite
+  text: 一气呵成
+
+    开发 React 组件(库)
+  tagline: 基于Vite，带来前所未有的组件开发体验
   image:
     src: /logo-with-shadow.png
     alt: VitDoc
   actions:
     - theme: brand
-      text: Get Started
+      text: 快速上手
       link: /guide/
     - theme: alt
-      text: View on GitHub
+      text: GitHub
       link: https://github.com/xiaobebe/vitdoc
 
 features:
   - icon: 📖
-    title: Stories
-    details: Write stories to showcase and document your components.
+    title: 组件文档
+    details: 在你开发调试组件的同时，为你生成一份优雅组件的文档
   - icon: ⚡️
-    title: Fast
-    details: Based on VITE,has very fast HMR and start speed.
+    title: 飞速
+    details: 基于Vite，拥有极快的热更新(HMR)和启动速度
   - icon: 🛠️
-    title: No-config
-    details: Sane and configurable defaults, automatically reuses your Vite config!
+    title: 零配置
+    details: 几乎不需要任何配置，即可为你的组件项目生成一份极佳的文档
   - icon: 💡
     title: Markdown
-    details: Like writing a document, write your component usage.
+    details: 像写Markdown文档一样，调试及编写组件用例
   - icon: 🔩
-    title: Extract Types
-    details: Automatically extract the definition of the React component type, and generate a readable API list.
+    title: 自动提取 TS类型
+    details: 根据 .tsx\.ts 文件自动提取组件类型定义，生成组件 API 列表
   - icon: 🏷
-    title: Directory Structure
-    details: Automatically generate menu navigation based on .md file directory.
+    title: 约定式路由
+    details: 根据 .md 文件目录自动生成菜单导航
 ---
