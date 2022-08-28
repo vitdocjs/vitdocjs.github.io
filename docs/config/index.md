@@ -11,16 +11,14 @@ export default defineConfig({
 
 目前支持以下配置项
 
-## 基础配置
-
-### logo
+## logo
 
 - **类型：**`string`
 - **默认值：** vtidoc 的 LOGO
 
 配置文档的 LOGO
 
-### appendHtml
+## appendHtml
 
 - **类型：**`string`
 - **默认值：** `null`
