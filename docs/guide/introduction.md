@@ -132,9 +132,9 @@ const ComponentTypeInfoPromise = import("./component1.tsx.type.json");
 
 在热更新过程中，同样需要考虑到 `tsx` 文件修改范围是否涉及到 `TypeScript` 类型的更改，如果发现修改导致类型变化时，再触发`HMR`事件进行模块更新。
 
-# 总结
+## 总览
 
-`vitdoc` ，其大致的构成就是由`Vite` + `3 Vite Pugins`构成，每个插件相互不耦合，相互职责也不相同，也就是说你可以拿到任意一个`Vite`插件去做别的用途，分别是：
+`vitdoc` 其大致的构成就是由`Vite` + `3 Vite Pugins`构成，每个插件相互不耦合，相互职责也不相同，也就是说你可以拿到任意一个`Vite`插件去做别的用途，分别是：
 
 - Markdown，用于解析 `.md` 文件，加载后可获取原文及 `jsx`, `tsx` 等可运行区块
 - TypeScript Interface，用于解析 `.tsx` 文件中 `export` 组件的类型定义
