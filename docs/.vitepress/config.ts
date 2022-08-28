@@ -33,14 +33,14 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.svg",
 
-    // algolia: {
-    //   appId: 'C80US3TG80',
-    //   apiKey: 'f4101dc89097dad4306135260a64e531',
-    //   indexName: 'VitDoc',
-    //   // searchParameters: {
-    //   //   facetFilters: ['tags:en']
-    //   // }
-    // },
+    algolia: {
+      appId: 'C80US3TG80',
+      apiKey: 'f4101dc89097dad4306135260a64e531',
+      indexName: 'VitDoc',
+      // searchParameters: {
+        // facetFilters: ['tags:en']
+      // }
+    },
 
     footer: {
       message: `Released under the MIT License.`,
@@ -49,7 +49,7 @@ export default defineConfig({
 
     nav: [
       { text: "Guide", link: "/guide/", activeMatch: "/guide/" },
-      // { text: "Config", link: "/config/", activeMatch: "/config/" },
+      { text: "Config", link: "/config/", activeMatch: "/config/" },
     ],
 
     localeLinks: {
@@ -61,7 +61,7 @@ export default defineConfig({
     },
 
     sidebar: {
-      "/guide/": [
+      "/": [
         {
           text: "指引",
           items: [
@@ -75,42 +75,16 @@ export default defineConfig({
             },
           ],
         },
-      ],
-      "/config/": [
         {
-          text: "Config",
+          text: "配置",
           items: [
             {
-              text: "Configuring VitDoc",
+              text: "配置项",
               link: "/config/",
             },
             {
-              text: "Shared Options",
-              link: "/config/shared-options",
-            },
-            {
-              text: "Server Options",
-              link: "/config/server-options",
-            },
-            {
-              text: "Build Options",
-              link: "/config/build-options",
-            },
-            {
-              text: "Preview Options",
-              link: "/config/preview-options",
-            },
-            {
-              text: "Dep Optimization Options",
-              link: "/config/dep-optimization-options",
-            },
-            {
-              text: "SSR Options",
-              link: "/config/ssr-options",
-            },
-            {
-              text: "Worker Options",
-              link: "/config/worker-options",
+              text: "FrontMatter",
+              link: "/config/frontmatter",
             },
           ],
         },
