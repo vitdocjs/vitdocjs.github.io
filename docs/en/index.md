@@ -17,7 +17,7 @@ hero:
       link: /guide/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/xiaobebe/vitdoc
+      link: https://github.com/vitdocjs/vitdoc
 
 features:
   - icon: 📖

@@ -33,7 +33,7 @@ export default defineConfig({
     logo: "/logo.svg",
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/xiaobebe/vitdoc' }
+      { icon: 'github', link: 'https://github.com/vitdocjs/vitdoc' }
     ],
 
     algolia: {
