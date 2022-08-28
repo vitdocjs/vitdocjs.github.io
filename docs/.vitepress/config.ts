@@ -26,12 +26,15 @@ export default defineConfig({
     ["meta", { property: "og:description", content: ogDescription }],
   ],
 
-  vue: {
-    reactivityTransform: true,
-  },
+
+
 
   themeConfig: {
     logo: "/logo.svg",
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/xiaobebe/vitdoc' }
+    ],
 
     algolia: {
       appId: 'C80US3TG80',
