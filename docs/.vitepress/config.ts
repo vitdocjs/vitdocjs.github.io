@@ -1,6 +1,7 @@
-import { defineConfig, DefaultTheme } from "vitepress";
+import { defineConfig } from "vitepress";
 
-const ogDescription = "A new way to write Component Usage.";
+const ogDescription =
+  "Seamlessly generate a lightweight, fast and beautiful component documentation.";
 const ogTitle = "VitDoc";
 const ogUrl = "https://vitdocjs.github.io";
 
@@ -14,7 +15,8 @@ export default defineConfig({
     "/en": {
       lang: "en-US",
       title: `VitDoc`,
-      description: "A new way to write Component Usage.",
+      description:
+        "Seamlessly generate a lightweight, fast and beautiful component documentation.",
     },
   },
 
@@ -26,14 +28,11 @@ export default defineConfig({
     ["meta", { property: "og:description", content: ogDescription }],
   ],
 
-
-
-
   themeConfig: {
     logo: "/logo.svg",
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vitdocjs/vitdoc' }
+      { icon: "github", link: "https://github.com/vitdocjs/vitdoc" },
     ],
 
     // algolia: {
