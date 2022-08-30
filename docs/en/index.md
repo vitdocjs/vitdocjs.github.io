@@ -2,11 +2,11 @@
 layout: home
 
 title: VitDoc
-titleTemplate: Seamlessly generate a lightweight, fast and beautiful component documentation.
+titleTemplate: A new way to write Component Usage.
 
 hero:
   name: VitDoc
-  text: Seamlessly generate a lightweight, fast and beautiful component documentation.
+  text: A new way to write Component Usage.
   tagline: Powered by Vite
   image:
     src: /logo-with-shadow.png
