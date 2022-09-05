@@ -35,14 +35,14 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/vitdocjs/vitdoc" },
     ],
 
-    // algolia: {
-    //   appId: 'C80US3TG80',
-    //   apiKey: 'f4101dc89097dad4306135260a64e531',
-    //   indexName: 'VitDoc',
-    //   // searchParameters: {
-    //     // facetFilters: ['tags:en']
-    //   // }
-    // },
+    algolia: {
+      appId: 'AZSLZBANG8',
+      apiKey: '3ff90582e6928e63cc41d58b6e2f1bc7',
+      indexName: 'vitdocjs',
+      // searchParameters: {
+        // facetFilters: ['tags:en']
+      // }
+    },
 
     footer: {
       message: `Released under the MIT License.`,
